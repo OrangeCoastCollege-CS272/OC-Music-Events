@@ -24,8 +24,6 @@ public class EventListActivity extends ListActivity {
         Intent intent = new Intent(this, EventDetailsActivity.class);
         intent.putExtra("title", title);
         intent.putExtra("details", details);
-
-        Animation animation =
-        startActivity(intent);
+        
     }
 }
