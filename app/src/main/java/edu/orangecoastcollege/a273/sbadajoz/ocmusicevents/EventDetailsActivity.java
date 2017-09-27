@@ -15,7 +15,16 @@ import java.io.InputStream;
 
 public class EventDetailsActivity extends AppCompatActivity {
 
-
+    /**
+     * Called when the activity is starting.
+     * Grabs the StringExtras from the intent which called this activity
+     *
+     * Puts strings into TextViews
+     *
+     * Uses {@link AssetManager} to fetch photo from assets and insert into imageView
+     *
+     * @param savedInstanceState Saved state from last run occurrence
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +54,10 @@ public class EventDetailsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Returns back to previous Activity
+     * @param v Clicked view
+     */
     protected void goBackToList(View v) {
         finish();
     }
